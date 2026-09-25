@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Alex Lu — AI Engineer &amp; Data Engineer</title>
+<meta name="description" content="Alex Lu — AI Engineer & Data Engineer in Providence, RI. Math & Physics grad building LLM/RAG pipelines, data systems & automation with Python & SQL." />
+<meta name="keywords" content="Alex Lu, AI Engineer, Data Engineer, Machine Learning, LLM, RAG, Data Engineering, Python, SQL, dbt, Snowflake, AWS, ETL, Brown University, DECES, University of Toronto" />
+<meta name="author" content="Alex Lu" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://alex-lu-portfolio.vercel.app/" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Alex Lu — AI Engineer &amp; Data Engineer" />
+<meta property="og:description" content="Alex Lu — AI Engineer & Data Engineer in Providence, RI. Math & Physics grad building LLM/RAG pipelines, data systems & automation with Python & SQL." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://alex-lu-portfolio.vercel.app/" />
+<meta property="og:image" content="https://alex-lu-portfolio.vercel.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Alex Lu" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Alex Lu — AI Engineer &amp; Data Engineer" />
+<meta name="twitter:description" content="Alex Lu — AI Engineer & Data Engineer in Providence, RI. Math & Physics grad building LLM/RAG pipelines, data systems & automation with Python & SQL." />
+<meta name="twitter:image" content="https://alex-lu-portfolio.vercel.app/og-image.png" />
+
+<!-- JSON-LD: schema.org/Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alex Lu",
+  "jobTitle": ["AI Engineer", "Data Engineer"],
+  "description": "Math & Physics grad applying analytical thinking to AI — building LLM pipelines, data systems & automation tools.",
+  "url": "https://alex-lu-portfolio.vercel.app/",
+  "image": "https://alex-lu-portfolio.vercel.app/og-image.png",
+  "email": "mailto:alexlu20040324@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Providence",
+    "addressRegion": "RI",
+    "addressCountry": "US"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Brown University",
+      "url": "https://www.brown.edu"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Toronto",
+      "url": "https://www.utoronto.ca"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/alexlu20040324-cmd",
+    "https://www.linkedin.com/in/alex-lu-0b1624348"
+  ],
+  "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Large Language Models", "Retrieval-Augmented Generation", "Data Engineering", "Python", "SQL", "dbt", "Snowflake", "AWS", "ETL"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:#05060c;color:#d7e6ff;font-family:"Inter",system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+button{font:inherit}
+/* 让根容器铺满 */
+.pf-root{min-height:100vh}
+/* src/pages/Portfolio/portfolio.css — 赛博朋克暗黑风 · 流动 */
+.pf-root {
+  --cy: #00f0ff; --mg: #ff2bd6; --pu: #a24bff; --gr: #00ff9d; --yl: #f5ff5b;
+  --pf-bg: #05060c; --panel: rgba(10, 13, 24, 0.62);
+  position: relative; min-height: 100%; overflow: hidden;
+  background:
+    radial-gradient(1200px 600px at 12% -5%, rgba(0, 240, 255, 0.10), transparent 55%),
+    radial-gradient(1000px 500px at 92% 8%, rgba(255, 43, 214, 0.10), transparent 55%),
+    radial-gradient(900px 500px at 60% 100%, rgba(162, 75, 255, 0.10), transparent 55%),
+    var(--pf-bg);
+  color: #d7e6ff; font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* 背景层：网格 + 光球 + 扫描线 */
+.pf-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.pf-bg::before { /* 流动网格 */
+  content: ''; position: absolute; inset: -2px;
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.06) 1px, transparent 1px);
+  background-size: 46px 46px;
+  animation: pf-grid 18s linear infinite;
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 92%);
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 40%, transparent 92%);
+}
+.pf-bg::after { /* 扫描线纹理 */
+  content: ''; position: absolute; inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0) 0 3px, rgba(0, 0, 0, 0.22) 3px 4px);
+  opacity: 0.5; mix-blend-mode: overlay;
+}
+@keyframes pf-grid { from { background-position: 0 0, 0 0; } to { background-position: 0 460px, 460px 0; } }
+
+.pf-orb { position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.5; }
+.pf-orb.a { width: 360px; height: 360px; left: -80px; top: 40px; background: radial-gradient(circle, var(--cy), transparent 70%); animation: pf-float 16s ease-in-out infinite; }
+.pf-orb.b { width: 420px; height: 420px; right: -120px; top: 380px; background: radial-gradient(circle, var(--mg), transparent 70%); animation: pf-float 20s ease-in-out infinite reverse; }
+.pf-orb.c { width: 320px; height: 320px; left: 30%; top: 1200px; background: radial-gradient(circle, var(--pu), transparent 70%); animation: pf-float 22s ease-in-out infinite; }
+@keyframes pf-float { 0%,100% { transform: translate(0,0); } 50% { transform: translate(40px,-30px); } }
+
+/* 扫描光带 */
+.pf-sweep { position: absolute; left: 0; right: 0; height: 140px; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(0,240,255,0.06), transparent);
+  animation: pf-sweep 7s linear infinite; }
+@keyframes pf-sweep { from { top: -160px; } to { top: 100%; } }
+
+.pf-wrap { position: relative; z-index: 2; max-width: 1080px; margin: 0 auto; padding: 40px 34px 90px; }
+
+/* ===== Hero ===== */
+.pf-hero { padding: 30px 0 40px; }
+.pf-kicker { font-family: ui-monospace, 'SF Mono', monospace; font-size: 13px; letter-spacing: 2px; color: var(--cy);
+  display: inline-flex; align-items: center; gap: 8px; }
+.pf-kicker::before { content: ''; width: 26px; height: 1px; background: var(--cy); box-shadow: 0 0 8px var(--cy); }
+.pf-cursor { display: inline-block; width: 9px; height: 16px; background: var(--cy); margin-left: 4px; box-shadow: 0 0 10px var(--cy); animation: pf-blink 1.1s step-end infinite; vertical-align: -2px; }
+@keyframes pf-blink { 50% { opacity: 0; } }
+
+.pf-name { font-size: clamp(44px, 8vw, 92px); font-weight: 900; line-height: 0.98; letter-spacing: -2px; margin: 14px 0 6px;
+  position: relative; color: #eaf6ff;
+  text-shadow: 0 0 18px rgba(0,240,255,0.35), 0 0 40px rgba(255,43,214,0.18); }
+.pf-name::before, .pf-name::after { content: attr(data-text); position: absolute; left: 0; top: 0; width: 100%; overflow: hidden; }
+.pf-name::before { color: var(--mg); animation: pf-glitch1 4s infinite steps(2); clip-path: inset(0 0 62% 0); }
+.pf-name::after { color: var(--cy); animation: pf-glitch2 3.4s infinite steps(2); clip-path: inset(58% 0 0 0); }
+@keyframes pf-glitch1 { 0%,92%,100% { transform: translate(0,0); } 94% { transform: translate(-3px,-1px); } 96% { transform: translate(3px,1px); } }
+@keyframes pf-glitch2 { 0%,90%,100% { transform: translate(0,0); } 93% { transform: translate(3px,1px); } 97% { transform: translate(-2px,0); } }
+
+.pf-role { font-size: clamp(18px, 3vw, 26px); font-weight: 800; margin-top: 4px;
+  background: linear-gradient(90deg, var(--cy), var(--mg), var(--pu), var(--cy)); background-size: 300% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent; animation: pf-flow 6s linear infinite; }
+@keyframes pf-flow { to { background-position: 300% 0; } }
+.pf-tag { color: #8fa6c8; font-size: 15px; margin-top: 12px; max-width: 620px; line-height: 1.6; }
+
+.pf-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.pf-status { font-family: ui-monospace, monospace; font-size: 12px; letter-spacing: 1px; color: var(--gr);
+  border: 1px solid rgba(0,255,157,0.4); border-radius: 4px; padding: 6px 11px; background: rgba(0,255,157,0.06);
+  display: inline-flex; align-items: center; gap: 8px; }
+.pf-status .dotpulse { width: 7px; height: 7px; border-radius: 50%; background: var(--gr); box-shadow: 0 0 8px var(--gr); animation: pf-pulse 1.4s ease-in-out infinite; }
+@keyframes pf-pulse { 50% { opacity: 0.35; transform: scale(0.7); } }
+.pf-loc { font-family: ui-monospace, monospace; font-size: 12px; color: #7c90b2; border: 1px solid var(--line); border-radius: 4px; padding: 6px 11px; display: inline-flex; align-items: center; gap: 6px; }
+
+.pf-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.pf-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 6px; font-size: 13px; font-weight: 600;
+  color: #cfe6ff; border: 1px solid rgba(0,240,255,0.35); background: rgba(0,240,255,0.05); transition: 0.18s; position: relative; }
+.pf-btn:hover { color: #061018; background: var(--cy); border-color: var(--cy); box-shadow: 0 0 20px rgba(0,240,255,0.5); transform: translateY(-2px); }
+.pf-btn.mg { border-color: rgba(255,43,214,0.4); background: rgba(255,43,214,0.06); }
+.pf-btn.mg:hover { background: var(--mg); border-color: var(--mg); box-shadow: 0 0 20px rgba(255,43,214,0.5); color: #14020e; }
+
+/* 统计条 */
+.pf-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-top: 34px; }
+.pf-stat { border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; background: var(--panel); }
+.pf-stat b { font-size: 26px; font-weight: 900; background: linear-gradient(90deg,var(--cy),var(--mg)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pf-stat span { display: block; font-size: 11px; color: #7c90b2; letter-spacing: 1px; margin-top: 2px; }
+
+/* ===== 通用 section ===== */
+.pf-root { --line: rgba(120,160,220,0.16); }
+.pf-sec { margin-top: 62px; }
+.pf-h { font-family: ui-monospace, 'SF Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #7c90b2; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+.pf-h b { color: #eaf6ff; font-weight: 800; font-size: 20px; letter-spacing: 0; }
+.pf-h .num { color: var(--cy); }
+.pf-h::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line), transparent); }
+
+/* 卡片 + 流动霓虹边 */
+.pf-card { position: relative; border-radius: 12px; background: var(--panel); backdrop-filter: blur(6px); border: 1px solid var(--line); overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+.pf-card::before { content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+  background: linear-gradient(120deg, var(--cy), var(--mg), var(--pu), var(--cy)); background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
+  opacity: 0; transition: opacity 0.25s; animation: pf-flow 6s linear infinite; }
+.pf-card:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(0,0,0,0.45); }
+.pf-card:hover::before { opacity: 0.9; }
+
+/* 项目 */
+.pf-projects { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+.pf-proj { padding: 20px; }
+.pf-proj .corner { position: absolute; width: 12px; height: 12px; border-color: var(--acc); }
+.pf-proj .tl { top: 8px; left: 8px; border-top: 2px solid; border-left: 2px solid; }
+.pf-proj .br { bottom: 8px; right: 8px; border-bottom: 2px solid; border-right: 2px solid; }
+.pf-proj .idx { font-family: ui-monospace, monospace; font-size: 12px; color: var(--acc); letter-spacing: 2px; }
+.pf-proj h3 { font-size: 19px; font-weight: 800; margin: 6px 0 1px; color: #eaf6ff; }
+.pf-proj .sub { font-size: 12.5px; color: var(--acc); font-family: ui-monospace, monospace; }
+.pf-proj p { font-size: 13px; color: #9fb2d0; line-height: 1.6; margin: 12px 0 12px; }
+/* 详细项目：工程亮点 bullet */
+.pf-proj-hl { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 6px; }
+.pf-proj-hl li { position: relative; padding-left: 16px; font-size: 12.5px; color: #a9bcda; line-height: 1.55; }
+.pf-proj-hl li::before { content: '▹'; position: absolute; left: 0; top: 0; color: var(--acc); font-size: 12px; }
+/* 详细项目：关键数据 chip */
+.pf-proj-metrics { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 13px; }
+.pf-metric { min-width: 0; padding: 7px 12px; border-radius: 8px; background: rgba(255,255,255,0.03);
+  border: 1px solid var(--line); border-left: 2px solid var(--acc); }
+.pf-metric b { display: block; font-size: 16px; font-weight: 800; color: #eaf6ff; line-height: 1.15; letter-spacing: 0.3px; }
+.pf-metric span { display: block; font-size: 10.5px; color: #7c90b2; font-family: ui-monospace, monospace; margin-top: 2px; white-space: pre-line; line-height: 1.35; }
+/* 进行中项目徽章 */
+.pf-proj-status { font-family: ui-monospace, monospace; font-size: 10px; letter-spacing: 1px; color: var(--acc);
+  border: 1px solid var(--acc); border-radius: 20px; padding: 2px 10px; white-space: nowrap;
+  background: color-mix(in srgb, var(--acc) 12%, transparent); }
+.pf-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.pf-chip { font-size: 11px; font-family: ui-monospace, monospace; color: #bcd0ee; border: 1px solid var(--line); border-radius: 4px; padding: 3px 8px; background: rgba(255,255,255,0.02); }
+.pf-proj .foot { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 11px; }
+.pf-proj .foot .role { font-size: 11.5px; color: #7c90b2; font-family: ui-monospace, monospace; }
+.pf-linklist { display: flex; gap: 12px; }
+.pf-linklist a { font-size: 12px; color: var(--acc); display: inline-flex; align-items: center; gap: 3px; }
+.pf-linklist a:hover { text-shadow: 0 0 10px var(--acc); }
+
+/* 经历时间线 */
+.pf-exp { position: relative; padding-left: 26px; }
+.pf-exp::before { content: ''; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 1px; background: linear-gradient(var(--cy), var(--mg), transparent); }
+.pf-exp-item { position: relative; padding: 0 0 26px 8px; }
+.pf-exp-item::before { content: ''; position: absolute; left: -25px; top: 4px; width: 11px; height: 11px; border-radius: 50%; background: var(--pf-bg); border: 2px solid var(--cy); box-shadow: 0 0 10px var(--cy); }
+.pf-exp-item .r { font-size: 16px; font-weight: 800; color: #eaf6ff; }
+.pf-exp-item .c { font-size: 13px; color: var(--cy); font-family: ui-monospace, monospace; }
+.pf-exp-item .m { font-size: 11.5px; color: #7c90b2; margin: 2px 0 8px; font-family: ui-monospace, monospace; }
+.pf-exp-item ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 5px; }
+.pf-exp-item li { font-size: 13px; color: #9fb2d0; padding-left: 16px; position: relative; line-height: 1.5; }
+.pf-exp-item li::before { content: '▹'; position: absolute; left: 0; color: var(--mg); }
+
+/* 技能 */
+.pf-skills { display: grid; gap: 14px; }
+.pf-skillrow { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.pf-skillrow .g { font-family: ui-monospace, monospace; font-size: 12px; color: var(--pu); width: 96px; flex-shrink: 0; letter-spacing: 1px; }
+.pf-skill { font-size: 12.5px; font-family: ui-monospace, monospace; color: #cfe6ff; border: 1px solid rgba(162,75,255,0.3); border-radius: 5px; padding: 5px 11px; background: rgba(162,75,255,0.06); transition: 0.15s; }
+.pf-skill:hover { border-color: var(--pu); box-shadow: 0 0 14px rgba(162,75,255,0.4); color: #fff; }
+
+/* 关于 + 联系 */
+.pf-about { font-size: 15px; color: #a9bcda; line-height: 1.8; padding: 22px; }
+.pf-contact { text-align: center; margin-top: 70px; padding: 40px 20px; }
+.pf-contact h2 { font-size: clamp(26px,5vw,42px); font-weight: 900; color: #eaf6ff; text-shadow: 0 0 26px rgba(0,240,255,0.3); }
+.pf-contact h2 .g { background: linear-gradient(90deg,var(--cy),var(--mg)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pf-foot { text-align: center; margin-top: 60px; font-family: ui-monospace, monospace; font-size: 12px; color: #5c6f8f; letter-spacing: 1px; }
+
+/* 自我介绍 */
+.pf-about-grid { display: grid; grid-template-columns: 250px 1fr; gap: 26px; align-items: start; }
+.pf-portrait { position: relative; aspect-ratio: 1; border-radius: 12px; overflow: hidden; --acc: var(--cy);
+  border: 1px solid rgba(0,240,255,0.25); background: linear-gradient(135deg, rgba(0,240,255,0.07), rgba(255,43,214,0.07)); display: flex; align-items: center; justify-content: center; }
+.pf-portrait img { width: 100%; height: 100%; object-fit: cover; }
+.pf-portrait .ph { text-align: center; color: #6b7fa0; font-family: ui-monospace, monospace; font-size: 11.5px; line-height: 1.7; }
+.pf-portrait .corner { position: absolute; width: 14px; height: 14px; border-color: var(--cy); }
+.pf-portrait .tl { top: 8px; left: 8px; border-top: 2px solid; border-left: 2px solid; }
+.pf-portrait .br { bottom: 8px; right: 8px; border-bottom: 2px solid; border-right: 2px solid; }
+.pf-now { margin: 16px 0; border-left: 2px solid var(--gr); padding: 8px 0 8px 14px; font-size: 13.5px; color: #9fb2d0; line-height: 1.6; background: linear-gradient(90deg, rgba(0,255,157,0.05), transparent); }
+.pf-now b { color: var(--gr); font-family: ui-monospace, monospace; font-size: 10.5px; letter-spacing: 1px; display: block; margin-bottom: 3px; }
+.pf-facts { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 9px; }
+.pf-facts li { font-size: 13.5px; color: #b9cbe8; display: flex; gap: 11px; align-items: center; }
+
+/* 生活照片墙 */
+.pf-gallery { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+.pf-photo { position: relative; aspect-ratio: 4/3; border-radius: 10px; overflow: hidden; border: 1px dashed rgba(0,240,255,0.3); background: rgba(10,13,24,0.5); display: flex; align-items: center; justify-content: center; transition: 0.2s; }
+.pf-photo:hover { border-color: var(--cy); box-shadow: 0 0 22px rgba(0,240,255,0.25); transform: translateY(-3px); }
+.pf-photo img { width: 100%; height: 100%; object-fit: cover; }
+.pf-photo .ph { text-align: center; color: #6b7fa0; font-family: ui-monospace, monospace; font-size: 11px; }
+.pf-photo .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 7px 9px; font-size: 11px; font-family: ui-monospace, monospace; color: #cfe0f8; background: linear-gradient(transparent, rgba(0,0,0,0.72)); }
+
+/* 证书 / 认证 */
+.pf-certs { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+.pf-cert { display: flex; align-items: center; gap: 13px; padding: 15px 17px; }
+.pf-cert .ic { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; background: rgba(0,240,255,0.08); color: var(--cy); flex-shrink: 0; }
+.pf-cert .n { font-size: 14px; font-weight: 700; color: #eaf6ff; }
+.pf-cert .m { font-size: 11.5px; color: #7c90b2; font-family: ui-monospace, monospace; margin-top: 1px; }
+.pf-cert .st { margin-left: auto; align-self: flex-start; font-size: 10.5px; font-family: ui-monospace, monospace; padding: 3px 9px; border-radius: 4px; white-space: nowrap; }
+.pf-cert .st.done { color: var(--gr); border: 1px solid rgba(0,255,157,0.4); background: rgba(0,255,157,0.06); }
+.pf-cert .st.wip { color: var(--yl); border: 1px solid rgba(245,255,91,0.4); background: rgba(245,255,91,0.06); }
+
+/* 评价 / 推荐 */
+.pf-quotes { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+.pf-quote { padding: 22px 24px; }
+.pf-quote .mk { font-size: 42px; line-height: 0.7; color: var(--mg); font-family: Georgia, serif; opacity: 0.55; }
+.pf-quote p { font-size: 14px; color: #c3d4ee; line-height: 1.75; margin: 8px 0 14px; font-style: italic; }
+.pf-quote .who { font-size: 12.5px; color: var(--cy); font-family: ui-monospace, monospace; }
+.pf-quote .who span { color: #7c90b2; }
+
+@media (max-width: 760px) {
+  .pf-projects, .pf-certs, .pf-quotes { grid-template-columns: 1fr; }
+  .pf-about-grid { grid-template-columns: 1fr; }
+  .pf-portrait { max-width: 220px; }
+  .pf-gallery { grid-template-columns: repeat(2,1fr); }
+  .pf-stats { grid-template-columns: repeat(2,1fr); }
+  .pf-wrap { padding: 28px 18px 70px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-bg::before, .pf-orb, .pf-sweep, .pf-role, .pf-card::before, .pf-name::before, .pf-name::after, .pf-cursor, .pf-status .dotpulse { animation: none !important; }
+}
+
+</style>
+</head>
+<body>
+<div class="pf-root"><div class="pf-bg" aria-hidden="true"><span class="pf-orb a"></span><span class="pf-orb b"></span><span class="pf-orb c"></span></div><div class="pf-sweep" aria-hidden="true"></div><div class="pf-wrap"><header class="pf-hero"><div class="pf-kicker">whoami<span class="pf-cursor"></span></div><h1 class="pf-name" data-text="Alex Lu">Alex Lu</h1><div class="pf-role">AI Engineer · Data Engineer</div><p class="pf-tag">Math &amp; Physics grad applying analytical thinking to AI — building LLM pipelines, data systems &amp; automation tools.</p><div class="pf-meta"><span class="pf-status"><span class="dotpulse"></span>OPEN TO 2027 INTERNSHIPS</span><span class="pf-loc"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Providence, RI</span></div><div class="pf-links"><a class="pf-btn" href="https://github.com/alexlu20040324-cmd" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> GitHub</a><a class="pf-btn" href="https://www.linkedin.com/in/alex-lu-0b1624348" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a><a class="pf-btn mg" href="mailto:alexlu20040324@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg> Email</a></div><div class="pf-stats"><div class="pf-stat"><b>6</b><span>Projects</span></div><div class="pf-stat"><b>18+</b><span>Tech Stack</span></div><div class="pf-stat"><b>97%</b><span>PDE Grade</span></div><div class="pf-stat"><b>M.S.</b><span>@ Brown</span></div></div></header><section class="pf-sec"><div class="pf-h"><span class="num">01</span> // <b>自我介绍</b></div><div class="pf-card" style="padding:24px"><div class="pf-about-grid"><div class="pf-portrait"><span class="corner tl"></span><span class="corner br"></span><div class="ph"><div style="font-size:30px;margin-bottom:6px">🧑‍💻</div>你的照片<br/>[ 留空位 ]</div></div><div><p style="font-size:15px;color:#a9bcda;line-height:1.8;margin:0">Mathematics &amp; Physics graduate from the University of Toronto, now pursuing an M.S. in Data-Enabled Computational Engineering and Science (DECES) at Brown. I bring rigorous analytical and mathematical thinking to AI and data engineering — from machine-learning models on scientific data, to LLM/RAG applications, to end-to-end ETL pipelines. I like turning careful analysis into things that actually run. &quot;Work hard in silence, let success make the noise.&quot;</p><div class="pf-now"><b>// NOW · 现在在做</b>Associate Business Analyst intern @ EPAM Systems (Summer 2026) · incoming M.S. @ Brown DECES · building LLM &amp; data-engineering projects and sharpening DE + AI skills.</div><ul class="pf-facts"><li><span style="font-size:16px">🎓</span>Brown University · M.S. DECES · 2026–Present</li><li><span style="font-size:16px">🎓</span>U. of Toronto · B.S. Math &amp; Physics · 2022–2026</li><li><span style="font-size:16px">💼</span>EPAM Systems · Business Analyst Intern · Summer 2026</li><li><span style="font-size:16px">📍</span>Providence, RI</li><li><span style="font-size:16px">🏀</span>Basketball · leagues &amp; pickup</li><li><span style="font-size:16px">💪</span>Strength training &amp; fitness</li><li><span style="font-size:16px">🌏</span>中 / 英 双语</li></ul><div class="pf-tags" style="margin-top:18px"><span class="pf-chip">Machine Learning</span><span class="pf-chip">LLM / AI</span><span class="pf-chip">Data Engineering</span><span class="pf-chip">Scientific Computing</span><span class="pf-chip">Mathematical Modeling</span><span class="pf-chip">Basketball</span><span class="pf-chip">Fitness</span></div></div></div></div></section><section class="pf-sec"><div class="pf-h"><span class="num">02</span> // <b>项目</b></div><div class="pf-projects"><article class="pf-card pf-proj" style="--acc:#a24bff"><span class="corner tl"></span><span class="corner br"></span><div class="row between center" style="gap:8px"><div class="idx">PROJECT_01</div></div><h3>AI / LLM Application</h3><div class="sub">RAG-powered LLM tool</div><p>An AI application powered by large language models — a practical tool such as a PDF chatbot, résumé analyzer or interview assistant, built with retrieval-augmented generation.</p><div class="pf-tags"><span class="pf-chip">Python</span><span class="pf-chip">OpenAI API</span><span class="pf-chip">LangChain</span><span class="pf-chip">RAG</span><span class="pf-chip">LLM</span></div><div class="foot"><span class="role">AI Engineer · 2026</span><div class="pf-linklist"><a href="https://github.com/alexlu20040324-cmd" target="_blank" rel="noreferrer">GitHub <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div></div></article><article class="pf-card pf-proj" style="--acc:#ff9500"><span class="corner tl"></span><span class="corner br"></span><div class="row between center" style="gap:8px"><div class="idx">PROJECT_02</div></div><h3>Cloud Data Platform · Fitness Marketing &amp; Retention</h3><div class="sub">AWS S3 + Athena · dimensional modeling</div><p>Acting as data engineer for Peak Fitness (a boutique brand, 32 locations / 17 cities) migrating off a third-party booking system: designed and built an end-to-end AWS pipeline turning raw operational data — signups, transactions, app engagement — into clean, analysis-ready datasets and business insights.</p><ul class="pf-proj-hl"><li>Architecture: raw files → S3 raw zone → Python ETL (clean + conform) → Parquet star schema in a curated zone → Athena SQL over external tables.</li><li>8-table dimensional model: fact_class_signups (grain: one signup) + member/class/instructor/location/date dims + fact_transactions (constellation schema).</li><li>ETL data-quality handling: dedup, timestamp parsing, Y/N→1/0, null handling, and flagging of refund/zero transactions.</li><li>Least-privilege IAM + AWS Budgets cost monitoring; deployed live on AWS.</li></ul><div class="pf-proj-metrics"><div class="pf-metric"><b>39%</b><span>members churned &gt;90d
+→ retention target list</span></div><div class="pf-metric"><b>~$1.8M</b><span>revenue from unlimited
+monthly subscription</span></div><div class="pf-metric"><b>8 tables</b><span>Parquet dimensional
+model on Athena</span></div></div><div class="pf-tags"><span class="pf-chip">AWS S3</span><span class="pf-chip">Amazon Athena</span><span class="pf-chip">Python</span><span class="pf-chip">pandas</span><span class="pf-chip">PyArrow</span><span class="pf-chip">Parquet</span><span class="pf-chip">SQL</span><span class="pf-chip">Star Schema</span><span class="pf-chip">Git</span></div><div class="foot"><span class="role">Data Engineer · 2026</span><div class="pf-linklist"><a href="https://github.com/alexlu20040324-cmd" target="_blank" rel="noreferrer">GitHub <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://github.com/alexlu20040324-cmd" target="_blank" rel="noreferrer">技术设计文档 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div></div></article><article class="pf-card pf-proj" style="--acc:#ff2bd6"><span class="corner tl"></span><span class="corner br"></span><div class="row between center" style="gap:8px"><div class="idx">PROJECT_03</div></div><h3>Jaffle Shop Analytics Pipeline</h3><div class="sub">dbt + Snowflake ELT · star schema</div><p>End-to-end ELT pipeline turning messy raw transactions into clean, tested, analytics-ready tables to answer one question: which products actually drive profit? Built a star schema — an order-item fact carrying profit, surrounded by customer / product / store dimensions.</p><ul class="pf-proj-hl"><li>Key insight: modeling volume correctly overturned an intuitive-but-wrong call — low-margin beverages sell 3–4× more often and generate ~2× the total profit of premium food.</li><li>Data quality: 21 automated tests across 3 layers — generic (uniqueness / non-null / referential integrity), custom business rules (profit never negative, totals reconcile), and a unit test on the profit-calc logic.</li><li>Performance: refactored the largest fact table to incremental materialization (with a 3-day late-arrival buffer).</li><li>Cost + ops: view materialization + auto-suspending XSMALL warehouse; daily cron run-and-test with timestamped logs; flagged (not deleted) 0.78% zero-value orders for auditability.</li></ul><div class="pf-proj-metrics"><div class="pf-metric"><b>98%</b><span>fewer rows/run
+90,900 → ~1,500 (incremental)</span></div><div class="pf-metric"><b>21</b><span>automated data
+quality tests</span></div><div class="pf-metric"><b>&lt;1%</b><span>of trial credits
+used (cost-efficient)</span></div></div><div class="pf-tags"><span class="pf-chip">dbt Core</span><span class="pf-chip">Snowflake</span><span class="pf-chip">Python</span><span class="pf-chip">SQL</span><span class="pf-chip">Star Schema</span><span class="pf-chip">ELT</span><span class="pf-chip">Incremental</span><span class="pf-chip">cron</span><span class="pf-chip">Git</span></div><div class="foot"><span class="role">Data Engineer · 2026</span><div class="pf-linklist"><a href="https://github.com/alexlu20040324-cmd/brave_de_project" target="_blank" rel="noreferrer">GitHub <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div></div></article><article class="pf-card pf-proj" style="--acc:#5B8DEF"><span class="corner tl"></span><span class="corner br"></span><div class="row between center" style="gap:8px"><div class="idx">PROJECT_04</div></div><h3>MyLife OS</h3><div class="sub">Personal life-management dashboard</div><p>A single-page personal operating system: tasks, calendar, academics, health, career &amp; interview prep, travel and maps + an AI assistant. Offline-first, fully data-driven React app.</p><div class="pf-tags"><span class="pf-chip">React</span><span class="pf-chip">Vite</span><span class="pf-chip">Recharts</span><span class="pf-chip">Leaflet</span></div><div class="foot"><span class="role">Solo build · 2026</span><div class="pf-linklist"></div></div></article><article class="pf-card pf-proj" style="--acc:#5B8DEF"><span class="corner tl"></span><span class="corner br"></span><div class="row between center" style="gap:8px"><div class="idx">PROJECT_05</div><span class="pf-proj-status">进行中 · Fall 2026</span></div><h3>Full-Stack App · Agentic Software Engineering</h3><div class="sub">CSCI 1340 · TypeScript full-stack + AI-agent workflow</div><p>Graduate software-engineering project (Brown CSCI 1340): building a full-stack TypeScript web application across 9 weekly sprints + a term project, applying modern engineering practice — testing, CI, accessibility, auth, cloud data — with an AI-agent-assisted development workflow (agent-use logs, MCP).</p><div class="pf-tags"><span class="pf-chip">TypeScript</span><span class="pf-chip">React</span><span class="pf-chip">Full-Stack</span><span class="pf-chip">Testing</span><span class="pf-chip">Auth</span><span class="pf-chip">Cloud DB</span><span class="pf-chip">Agentic Dev</span><span class="pf-chip">MCP</span></div><div class="foot"><span class="role">Software Engineering · 2026 · in progress</span><div class="pf-linklist"></div></div></article><article class="pf-card pf-proj" style="--acc:#3FA796"><span class="corner tl"></span><span class="corner br"></span><div class="row between center" style="gap:8px"><div class="idx">PROJECT_06</div><span class="pf-proj-status">进行中 · Fall 2026</span></div><h3>Data-Driven Engineering Model</h3><div class="sub">ENGN 2350 (3dasm) · probabilistic ML final project</div><p>Data-driven design &amp; analysis final project (Brown ENGN 2350 / 3dasm): applying a probabilistic-ML strategy to solve an engineering problem end-to-end — sampling / design of experiments, Gaussian-process regression with uncertainty quantification, and (Bayesian) neural networks, built on the f3dasm framework. Deliverable: report + reproducible code.</p><div class="pf-tags"><span class="pf-chip">Python</span><span class="pf-chip">Gaussian Process</span><span class="pf-chip">Neural Networks</span><span class="pf-chip">Uncertainty</span><span class="pf-chip">Optimization</span><span class="pf-chip">f3dasm</span></div><div class="foot"><span class="role">Data-Driven ML · 2026 · in progress</span><div class="pf-linklist"></div></div></article></div></section><section class="pf-sec"><div class="pf-h"><span class="num">03</span> // <b>实习 / 经历</b></div><div class="pf-exp"><div class="pf-exp-item"><div class="r">Associate Business Analyst Intern</div><div class="c">EPAM Systems</div><div class="m">May 2026 – Aug 2026 · （待补：地点 / Remote）</div><ul><li>（待补：你在 EPAM 的具体职责与量化成果 —— 例如做了什么分析 / 交付了什么 / 影响了哪些指标）</li></ul></div><div class="pf-exp-item"><div class="r">Data Engineering Fellow</div><div class="c">Brave Career · Data Engineering Program</div><div class="m">2026 – Present · Providence</div><ul><li>Systematic training in ETL/ELT, dimensional modeling, warehousing and Spark / Databricks.</li><li>Mentored by Chapman Cheung &amp; Austin Chen; hands-on projects and technical presentations.</li></ul></div></div></section><section class="pf-sec"><div class="pf-h"><span class="num">04</span> // <b>教育</b></div><div class="pf-exp"><div class="pf-exp-item"><div class="r">Brown University</div><div class="c">M.S. · Data-Enabled Computational Engineering and Science (DECES)</div><div class="m">2026 – Present</div><ul><li>Professional Track · Data / AI Engineering — 课程覆盖软件工程(TypeScript 全栈 + Agentic Dev)、计算概率统计(蒙特卡洛/贝叶斯/HMM)、数据驱动机器学习(高斯过程/神经网络/优化)；下学期：深度学习、分布式系统、AI 基础、计算机视觉</li></ul></div><div class="pf-exp-item"><div class="r">University of Toronto</div><div class="c">B.S. · Mathematics &amp; Physics</div><div class="m">2022 – 2026</div><ul><li>Coursework: Partial Differential Equations (97%), Nonlinear Optimization, Probability Theory, Computational Physics, Advanced Classical Mechanics</li></ul></div></div></section><section class="pf-sec"><div class="pf-h"><span class="num">05</span> // <b>研究生课程</b> <span class="tiny muted" style="font-weight:400;letter-spacing:0">· Brown DECES</span></div><div class="pf-projects"><article class="pf-card pf-proj" style="--acc:#5B8DEF"><span class="corner tl"></span><span class="corner br"></span><div class="idx">CSCI 1340</div><h3>Intro to Software Engineering</h3><div class="sub">第一学期 · Fall 2026</div><p>TypeScript 全栈开发 + AI Agent 辅助编程方法论；9 个 Sprint + Term Project，工程化协作。</p><div class="pf-tags"><span class="pf-chip">TypeScript</span><span class="pf-chip">Full-Stack</span><span class="pf-chip">Testing</span><span class="pf-chip">Agentic Dev</span><span class="pf-chip">MCP</span></div><div class="foot"><span class="role">→ AI / SWE</span></div></article><article class="pf-card pf-proj" style="--acc:#3FA796"><span class="corner tl"></span><span class="corner br"></span><div class="idx">ENGN 2350</div><h3>Data-Driven Design &amp; Analysis (3dasm)</h3><div class="sub">第一学期 · Fall 2026</div><p>数据驱动的建模与分析：概率视角的机器学习、高斯过程与不确定性量化、(贝叶斯)神经网络、优化与自动微分、f3dasm 框架。</p><div class="pf-tags"><span class="pf-chip">Gaussian Process</span><span class="pf-chip">Neural Networks</span><span class="pf-chip">Optimization</span><span class="pf-chip">AutoDiff</span><span class="pf-chip">Pandas</span></div><div class="foot"><span class="role">→ Data Eng / ML</span></div></article><article class="pf-card pf-proj" style="--acc:#EC4899"><span class="corner tl"></span><span class="corner br"></span><div class="idx">DATA 1050</div><h3>Data Engineering</h3><div class="sub">第一学期 · Fall 2026</div><p>ETL/ELT、维度建模与数据仓库、SQL 与 Spark/Databricks 大数据处理；含 SQL 项目与 Spark 项目实操。</p><div class="pf-tags"><span class="pf-chip">SQL</span><span class="pf-chip">Spark</span><span class="pf-chip">Databricks</span><span class="pf-chip">ETL / ELT</span><span class="pf-chip">Data Warehouse</span></div><div class="foot"><span class="role">→ Data Engineering</span></div></article></div></section><section class="pf-sec"><div class="pf-h"><span class="num">06</span> // <b>技能</b></div><div class="pf-skills"><div class="pf-skillrow"><span class="g">Languages</span><span class="pf-skill">Python</span><span class="pf-skill">SQL</span><span class="pf-skill">JavaScript</span></div><div class="pf-skillrow"><span class="g">AI / ML</span><span class="pf-skill">Machine Learning</span><span class="pf-skill">Scikit-Learn</span><span class="pf-skill">XGBoost</span><span class="pf-skill">LLM</span><span class="pf-skill">RAG</span><span class="pf-skill">LangChain</span><span class="pf-skill">OpenAI API</span><span class="pf-skill">Prompt Engineering</span></div><div class="pf-skillrow"><span class="g">Data</span><span class="pf-skill">Pandas</span><span class="pf-skill">NumPy</span><span class="pf-skill">SciPy</span><span class="pf-skill">PostgreSQL</span><span class="pf-skill">ETL</span><span class="pf-skill">Data Analysis</span><span class="pf-skill">Time-Series</span></div><div class="pf-skillrow"><span class="g">Scientific Computing</span><span class="pf-skill">Numerical Modeling</span><span class="pf-skill">Matplotlib</span><span class="pf-skill">Jupyter</span></div><div class="pf-skillrow"><span class="g">Web / Tools</span><span class="pf-skill">React</span><span class="pf-skill">Vite</span><span class="pf-skill">Git</span><span class="pf-skill">API Integration</span></div><div class="pf-skillrow"><span class="g">Foundations</span><span class="pf-skill">Applied Math</span><span class="pf-skill">PDEs</span><span class="pf-skill">Optimization</span><span class="pf-skill">Probability</span><span class="pf-skill">Physics</span></div></div></section><section class="pf-sec"><div class="pf-h"><span class="num">07</span> // <b>证书 / 认证</b></div><div class="pf-certs"><div class="pf-card pf-cert"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg></span><div><div class="n">Azure Fundamentals (AZ-900)</div><div class="m">Microsoft · 2027</div></div><span class="st wip">备考中</span></div><div class="pf-card pf-cert"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg></span><div><div class="n">Azure Data Engineer Associate</div><div class="m">Microsoft · 2027</div></div><span class="st wip">计划中</span></div></div></section><section class="pf-sec"><div class="pf-h"><span class="num">08</span> // <b>评价 / 推荐</b></div><div class="pf-quotes"><div class="pf-card pf-quote"><div class="mk"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><p>（待补：放一句导师 / EPAM 同事对你的真实评价 —— 招聘时很加分）</p><div class="who">Chapman Cheung <span>· DE Mentor · Brave Career</span></div></div><div class="pf-card pf-quote"><div class="mk"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><p>（待补：另一段真实推荐语，展示你的协作与技术能力）</p><div class="who">Austin Chen <span>· DE Mentor · Brave Career</span></div></div></div></section><section class="pf-sec"><div class="pf-h"><span class="num">09</span> // <b>生活照片</b> <span class="tiny muted" style="font-weight:400;letter-spacing:0">· 留好空位，之后放你的照片</span></div><div class="pf-gallery"><div class="pf-photo"><div class="ph"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera" style="opacity:0.6"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg><div style="margin-top:6px">[ 照片空位 ]</div></div><div class="cap">Brown campus</div></div><div class="pf-photo"><div class="ph"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera" style="opacity:0.6"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg><div style="margin-top:6px">[ 照片空位 ]</div></div><div class="cap">Basketball</div></div><div class="pf-photo"><div class="ph"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera" style="opacity:0.6"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg><div style="margin-top:6px">[ 照片空位 ]</div></div><div class="cap">Fitness</div></div><div class="pf-photo"><div class="ph"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera" style="opacity:0.6"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg><div style="margin-top:6px">[ 照片空位 ]</div></div><div class="cap">Workstation / setup</div></div></div></section><section class="pf-contact"><div class="pf-kicker" style="justify-content:center;display:flex">let&#x27;s build</div><h2>一起做点<span class="g"> 有用的东西</span></h2><div class="pf-links" style="justify-content:center;margin-top:22px"><a class="pf-btn" href="mailto:alexlu20040324@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg> alexlu20040324@gmail.com</a><a class="pf-btn mg" href="https://github.com/alexlu20040324-cmd" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> GitHub</a></div></section><div class="pf-foot">// end_of_line — built by Alex Lu · 2026</div></div></div>
+</body>
+</html>
